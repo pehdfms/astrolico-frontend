@@ -14,6 +14,8 @@ export default {
 }
 </script>
 
+@import './assets/css/bootstrap.css'
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
