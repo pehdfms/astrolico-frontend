@@ -1,28 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-app-bar>
+      <h1>Astrolico</h1>
+    </v-app-bar>
+    <v-main>
+      <APODList/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import APODList from "@/components/APODList";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    APODList,
+  },
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-@import './assets/css/bootstrap.css'
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
